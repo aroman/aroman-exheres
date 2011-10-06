@@ -1,6 +1,22 @@
-# Copyright 2011 Avi "aroman" Romanoff <avi@elementaryos.org>
-# Distributed under the terms of the GNU General Public License Version 2
+# Copyright 2011 Avi Romanoff
+# Distributed under the terms of the GNU General Public License v2
 
+require cmake scm-bzr
+
+SUMMARY="The elementary Desktop Development Library"
+
+SCM_REPOSITORY="bzr+http://bazaar.launchpad.net/%2Bbranch/granite/"
+
+LICENCES="GPL-3"
 SLOT="0"
+PLATFORMS="~amd64 ~x86"
+HOMEPAGE="http://elementaryos.org ${HOMEPAGE}"
 
-HOMEPAGE="http://elementaryos.org/"
+DEPENDENCIES="
+    build:
+        dev-util/pkg-config
+    build+run:
+        dev-libs/glib:2
+"
+
+MYOPTIONS=""
