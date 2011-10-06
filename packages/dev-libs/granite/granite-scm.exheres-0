@@ -5,7 +5,7 @@ LICENCES="GPL-3"
 SLOT="0"
 PLATFORMS="~amd64 ~x86"
 HOMEPAGE="http://elementaryos.org/"
-SCM_REPOSITORY="bzr+http://bazaar.launchpad.net/%2Bbranch/granite/"
+SCM_REPOSITORY="http://bazaar.launchpad.net/~elementary-pantheon/granite/granite/"
 
 require cmake scm-bzr
 
