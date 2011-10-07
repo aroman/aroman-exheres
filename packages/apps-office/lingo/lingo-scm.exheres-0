@@ -1,0 +1,30 @@
+# Copyright 2011 Avi Romanoff
+# Distributed under the terms of the GNU General Public License v2
+
+LICENCES="GPL-3"
+SLOT="0"
+PLATFORMS="~amd64 ~x86"
+HOMEPAGE="http://elementaryos.org/"
+SCM_REPOSITORY="http://bazaar.launchpad.net/~aroman/lingo-dictionary/lingo"
+
+require cmake bzrpatched gsettings
+
+SUMMARY="The sexiest dictionary on Earth and Jupiter."
+DOWNLOADS=""
+
+
+DEPENDENCIES="
+    build:
+        dev-util/pkg-config
+        dev-lang/vala:0.14
+    build+run:
+        base/libgee
+        x11-libs/gtk+:3
+        core/json-glib
+        gnome-desktop/libsoup:2.4
+        dev-db/sqlite:3
+        dev-libs/granite
+        dev-libs/glib:2
+"
+
+MYOPTIONS=""
